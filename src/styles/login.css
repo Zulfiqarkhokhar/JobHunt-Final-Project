@@ -1,0 +1,15 @@
+.login-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.login-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+}
