@@ -1,0 +1,54 @@
+/* HeroSection.css */
+
+.hero-section {
+  background-color: #d9c1ea; /* Light background color */
+  padding: 50px 0;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-subheading {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input-group .form-control {
+  border-radius: 0;
+  border-right: 0;
+}
+
+.input-group .btn {
+  border-radius: 0;
+  background-color: #6a0dad; /* Purple color for the button */
+  color: #fff;
+}
+
+.suggestion-text {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.suggestion {
+  color: #6a0dad; /* Purple color for suggestions */
+  font-weight: bold;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}

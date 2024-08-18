@@ -1,0 +1,36 @@
+.job-card {
+  margin-bottom: 20px;
+  background-color: #edd8ff;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.company-name {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.job-location {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.applicants {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.badge-primary {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}

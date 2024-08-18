@@ -1,0 +1,49 @@
+/* Navbar.css */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: #6a0dad; /* The purple color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #000; /* Default text color */
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #6a0dad; /* Active link color */
+}
+
+.btn-outline-primary {
+  color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+.btn-primary {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+.btn-primary:hover {
+  background-color: #500a8e; /* Slightly darker purple */
+  border-color: #500a8e;
+}

@@ -1,11 +1,13 @@
-import Login from "./Login";
-import Signup from "./Signup";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import FeaturedJobs from "./FeaturedJobs";
 
 function Home() {
   return (
     <>
-      <Login></Login>
-      <Signup></Signup>
+      <Navbar></Navbar>
+      <Hero></Hero>
+      <FeaturedJobs></FeaturedJobs>
     </>
   );
 }
