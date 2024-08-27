@@ -1,0 +1,16 @@
+.footer {
+  background-color: #d9c1ea;
+}
+
+.footer h5 {
+  color: #6f42c1;
+}
+
+.footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #6f42c1;
+}

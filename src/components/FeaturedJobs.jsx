@@ -1,9 +1,8 @@
 import React from "react";
-import { jobsData } from "../jobsData";
 import JobCard from "./JobCard";
 import "../styles/featuredjobs.css";
 
-function FeaturedJobs() {
+function FeaturedJobs({ jobsData }) {
   return (
     <section className="featured-jobs-section mt-5">
       <div className="container">
@@ -12,7 +11,7 @@ function FeaturedJobs() {
           Choose jobs from the top employers and apply for the same.
         </p>
         <div className="row">
-          {jobsData.map((job) => (
+          {jobsData.slice(0, 3).map((job) => (
             <div key={job.id} className="col-md-4">
               <JobCard job={job} />
             </div>
