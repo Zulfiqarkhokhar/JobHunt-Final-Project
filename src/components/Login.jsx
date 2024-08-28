@@ -7,7 +7,6 @@ function Login({ setIsLogin }) {
   return (
     <div className="container-fluid vh-100">
       <div className="row h-100">
-        {/* Left side - Form */}
         <div className="col-md-6 d-flex align-items-center justify-content-center login-form">
           <div className="w-50">
             <h2 className="text-center mb-4">Login</h2>

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import JobCard from "./JobCard"; // Adjust the import path as needed
-import "../styles/JobSearch.css"; // Optional: for any custom CSS
+import JobCard from "./JobCard";
+import "../styles/JobSearch.css";
 
 const JobSearch = ({ jobsData }) => {
-  // State variables for filters
   const [selectedJobTypes, setSelectedJobTypes] = useState([]);
   const [salaryRange, setSalaryRange] = useState({ min: "", max: "" });
 
-  // Filter jobs based on selected filters
   const filteredJobs = jobsData.filter((job) => {
     const matchesJobType =
       selectedJobTypes.length === 0 || selectedJobTypes.includes(job.type);
@@ -21,7 +19,6 @@ const JobSearch = ({ jobsData }) => {
     return matchesJobType && matchesSalaryRange;
   });
 
-  // Handle job type checkbox change
   const handleJobTypeChange = (event) => {
     const { value, checked } = event.target;
     setSelectedJobTypes((prevSelected) =>
@@ -31,7 +28,6 @@ const JobSearch = ({ jobsData }) => {
     );
   };
 
-  // Handle salary range input change
   const handleSalaryRangeChange = (event) => {
     const { name, value } = event.target;
     setSalaryRange((prevRange) => ({
@@ -42,7 +38,6 @@ const JobSearch = ({ jobsData }) => {
 
   return (
     <div className="job-search-container container">
-      {/* Search Bar */}
       <div className="search-bar my-4">
         <div className="input-group">
           <input
@@ -70,13 +65,11 @@ const JobSearch = ({ jobsData }) => {
       </div>
 
       <div className="row">
-        {/* Filters Sidebar */}
         <div className="col-lg-3">
           <div className="filter-sidebar">
             <h5>Filter</h5>
             <p className="text-end">Clear all</p>
 
-            {/* Job Type Filter */}
             <div className="filter-category">
               <h6>Job Type</h6>
               <div>
@@ -113,7 +106,6 @@ const JobSearch = ({ jobsData }) => {
               </div>
             </div>
 
-            {/* Salary Range Filter */}
             <div className="filter-category">
               <h6>Salary Range</h6>
               <input
@@ -133,18 +125,14 @@ const JobSearch = ({ jobsData }) => {
                 onChange={handleSalaryRangeChange}
               />
             </div>
-
-            {/* Additional filters can be added here similarly */}
           </div>
         </div>
 
-        {/* Job Cards */}
         <div className="col-lg-9">
           <div className="d-flex justify-content-between align-items-center mb-3">
             <h5>All Jobs ({filteredJobs.length})</h5>
             <select className="form-select w-auto">
               <option>Popular</option>
-              {/* Add more sorting options as needed */}
             </select>
           </div>
           <div className="row">

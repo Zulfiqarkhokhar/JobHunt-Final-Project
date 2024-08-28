@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className="footer py-5">
       <div className="container">
         <div className="row">
-          {/* Company Info */}
           <div className="col-lg-3 col-md-6 mb-4">
             <h5 className="text-primary">AlwaysApply</h5>
             <p>
@@ -17,7 +16,6 @@ const Footer = () => {
             </p>
             <p>Defence View Phase Two Karachi, Sindh, Pakistan</p>
           </div>
-          {/* Quick Link */}
           <div className="col-lg-3 col-md-6 mb-4">
             <h5>Quick Link</h5>
             <ul className="list-unstyled">
@@ -38,7 +36,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* Candidate */}
           <div className="col-lg-3 col-md-6 mb-4">
             <h5>Candidate</h5>
             <ul className="list-unstyled">
@@ -64,7 +61,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* Employers */}
           <div className="col-lg-3 col-md-6 mb-4">
             <h5>Employers</h5>
             <ul className="list-unstyled">
@@ -92,7 +88,6 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        {/* Footer Bottom */}
         <div className="row">
           <div className="col-md-6">
             <p className="text-muted mb-0">

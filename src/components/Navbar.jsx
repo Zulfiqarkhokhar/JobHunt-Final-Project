@@ -1,17 +1,15 @@
 import React from "react";
-import "../styles/navbar.css"; // We'll create this file next
+import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container">
-        {/* Logo */}
         <a className="navbar-brand" href="/">
           <span className="logo-text">JobHunter</span>
         </a>
 
-        {/* Toggler for mobile view */}
         <button
           className="navbar-toggler"
           type="button"
@@ -24,7 +22,6 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
@@ -44,7 +41,6 @@ function Navbar() {
             </li>
           </ul>
 
-          {/* Right-aligned buttons */}
           <div className="d-flex">
             <Link to={"/"} className="btn btn-primary">
               Profile

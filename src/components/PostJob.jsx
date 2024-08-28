@@ -4,7 +4,6 @@ import apple from "../assets/apple.png";
 import intel from "../assets/intel.png";
 
 const PostJob = ({ jobsData, setJobsData }) => {
-  // State for form inputs
   const [jobDetails, setJobDetails] = useState({
     title: "",
     type: "FULL-TIME",
@@ -12,11 +11,9 @@ const PostJob = ({ jobsData, setJobsData }) => {
     company: "",
     location: "",
     applicants: "0 applicants",
-    logo: googleIcon, // Default logo, adjust based on user input if needed
+    logo: googleIcon,
     applyLink: "#",
   });
-
-  // Function to handle input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
     setJobDetails((prevDetails) => ({
@@ -25,20 +22,16 @@ const PostJob = ({ jobsData, setJobsData }) => {
     }));
   };
 
-  // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Create a new job object
     const newJob = {
       ...jobDetails,
-      id: jobsData.length + 1, // Set a unique id based on the number of jobs
+      id: jobsData.length + 1,
     };
 
-    // Update jobs data
     setJobsData((prevJobs) => [...prevJobs, newJob]);
 
-    // Reset form fields
     setJobDetails({
       title: "",
       type: "FULL-TIME",

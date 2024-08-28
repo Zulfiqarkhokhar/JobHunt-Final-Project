@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import apply from "../assets/apply.png";
 
 function ApplyPage() {
   const [firstName, setFirstName] = useState("");
@@ -32,70 +33,81 @@ function ApplyPage() {
   return (
     <div className="apply-page container">
       <h2 className="my-4">Apply for Job</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group mb-3">
-          <label htmlFor="firstName">First Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="firstName"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
+      <div className="row">
+        <div className="col-md-6">
+          {" "}
+          {/* Left column for form fields */}
+          <form onSubmit={handleSubmit}>
+            <div className="form-group mb-3">
+              <label htmlFor="firstName">First Name</label>
+              <input
+                type="text"
+                className="form-control"
+                id="firstName"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </div>
+            <div className="form-group mb-3">
+              <label htmlFor="lastName">Last Name</label>
+              <input
+                type="text"
+                className="form-control"
+                id="lastName"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </div>
+            <div className="form-group mb-3">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="form-group mb-3">
+              <label htmlFor="experience">Years of Experience</label>
+              <input
+                type="number"
+                className="form-control"
+                id="experience"
+                value={experience}
+                onChange={(e) => setExperience(e.target.value)}
+              />
+            </div>
+            <div className="form-group mb-3">
+              <label htmlFor="salaryExpectation">Salary Expectation</label>
+              <input
+                type="text"
+                className="form-control"
+                id="salaryExpectation"
+                value={salaryExpectation}
+                onChange={(e) => setSalaryExpectation(e.target.value)}
+              />
+            </div>
+            <div className="form-group mb-3">
+              <label htmlFor="resume">Resume Upload</label>
+              <input
+                type="file"
+                className="form-control"
+                id="resume"
+                onChange={(e) => setResume(e.target.files[0])}
+              />
+            </div>
+            <button type="submit" className="btn btn-primary mb-3">
+              Submit
+            </button>
+          </form>
         </div>
-        <div className="form-group mb-3">
-          <label htmlFor="lastName">Last Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="lastName"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-          />
+        <div className="col-md-6 text-center">
+          {" "}
+          {/* Right column for image */}
+          <img src={apply} alt="Job Posting" className="w-100" />
         </div>
-        <div className="form-group mb-3">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="form-group mb-3">
-          <label htmlFor="experience">Years of Experience</label>
-          <input
-            type="number"
-            className="form-control"
-            id="experience"
-            value={experience}
-            onChange={(e) => setExperience(e.target.value)}
-          />
-        </div>
-        <div className="form-group mb-3">
-          <label htmlFor="salaryExpectation">Salary Expectation</label>
-          <input
-            type="text"
-            className="form-control"
-            id="salaryExpectation"
-            value={salaryExpectation}
-            onChange={(e) => setSalaryExpectation(e.target.value)}
-          />
-        </div>
-        <div className="form-group mb-3">
-          <label htmlFor="resume">Resume Upload</label>
-          <input
-            type="file"
-            className="form-control"
-            id="resume"
-            onChange={(e) => setResume(e.target.files[0])}
-          />
-        </div>
-        <button type="submit" className="btn btn-primary mb-3">
-          Submit
-        </button>
-      </form>
+      </div>
       {showAlert && (
         <div
           className="alert alert-success alert-dismissible fade show"

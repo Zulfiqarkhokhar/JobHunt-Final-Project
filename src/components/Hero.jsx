@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/hero.css"; // We'll create this file next
+import "../styles/hero.css";
 import hero from "../assets/hero.png";
 
 function Hero() {
@@ -7,7 +7,6 @@ function Hero() {
     <section className="hero-section">
       <div className="container">
         <div className="row align-items-center">
-          {/* Left side - Text and Search Bar */}
           <div className="col-lg-6 col-md-12">
             <h1 className="hero-heading">
               Find a job that aligns with your interests and skills
@@ -42,7 +41,6 @@ function Hero() {
             </div>
           </div>
 
-          {/* Right side - Illustration */}
           <div className="col-lg-6 col-md-12 d-none d-lg-block">
             <img
               src={hero}
