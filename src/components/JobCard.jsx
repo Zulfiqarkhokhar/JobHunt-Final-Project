@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/jobcard.css";
+import { Link } from "react-router-dom";
 
 function JobCard({ job }) {
   return (
@@ -33,9 +34,9 @@ function JobCard({ job }) {
             <a href="#" className="btn btn-outline-primary btn-sm p-2 mx-2">
               View details
             </a>
-            <a href={job.applyLink} className="btn btn-primary btn-sm p-2 ml-2">
+            <Link to={"/apply"} className="btn btn-primary btn-sm p-2 ml-2">
               Apply now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

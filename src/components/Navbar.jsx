@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/navbar.css"; // We'll create this file next
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -27,40 +28,27 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <Link to="/" className="nav-link" aria-current="page">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link to="/findJobs" className="nav-link">
                 Find Jobs
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Employers
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Admin
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                About Us
-              </a>
+              <Link to="/postJobs" className="nav-link">
+                Add Jobs
+              </Link>
             </li>
           </ul>
 
           {/* Right-aligned buttons */}
           <div className="d-flex">
-            <a href="/" className="btn btn-outline-primary me-2">
-              Contact Us
-            </a>
-            <a href="/" className="btn btn-primary">
-              Login
-            </a>
+            <Link to={"/"} className="btn btn-primary">
+              Profile
+            </Link>
           </div>
         </div>
       </div>

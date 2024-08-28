@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/signup.css";
 import signup from "../assets/signup.svg";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -59,10 +60,15 @@ function Signup() {
                 />
               </div>
               <button type="submit" className="btn btn-primary w-100">
-                Sign Up
+                <Link
+                  to={"/"}
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Sign up
+                </Link>
               </button>
               <div className="text-center mt-3">
-                <a href="/">Already have an account? Login</a>
+                <Link to={"/"}>Already have an account? Login</Link>
               </div>
             </form>
           </div>

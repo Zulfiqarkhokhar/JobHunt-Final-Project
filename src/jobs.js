@@ -1,7 +1,7 @@
 import googleIcon from "./assets/googleIcon.png";
 import apple from "./assets/apple.png";
 import intel from "./assets/intel.png";
-export const jobsData = [
+export const jobs = [
   {
     id: 1,
     title: "Technical Support Specialist",

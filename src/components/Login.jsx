@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/login.css";
 import login from "../assets/login.webp";
+import { Link } from "react-router-dom";
 
-function Login() {
+function Login({ setIsLogin }) {
   return (
     <div className="container-fluid vh-100">
       <div className="row h-100">
@@ -33,11 +34,16 @@ function Login() {
                   placeholder="Enter your password"
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100">
+              <button
+                type="submit"
+                onClick={() => setIsLogin(true)}
+                className="btn btn-primary w-100"
+              >
                 Login
               </button>
               <div className="text-center mt-3">
-                <a href="/">Forgot password?</a>
+                don't have account?
+                <Link to={"/signup"}>Signup</Link>
               </div>
             </form>
           </div>
